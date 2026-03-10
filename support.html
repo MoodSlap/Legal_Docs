@@ -50,48 +50,82 @@
             border: 1px solid #eaeaea;
             border-radius: 8px;
             padding: 15px 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .faq-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
         }
 
         .faq-question {
             font-weight: 700;
             color: #2c3e50;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
             font-size: 1.1em;
+            border-bottom: 1px dashed #eee;
+            padding-bottom: 10px;
         }
 
-        .character-speaker {
+        .character-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .character-avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            margin-right: 15px;
+            object-fit: cover;
+            border: 2px solid;
+            background-color: #f0f0f0;
+        }
+
+        .character-name {
             font-weight: bold;
-            color: #e74c3c;
-            margin-right: 5px;
+            font-size: 1.05em;
         }
 
-        .character-speaker.ego {
-            color: #8e44ad;
-        }
+        /* Character Colors */
+        .ego .character-avatar { border-color: #8e44ad; }
+        .ego .character-name { color: #8e44ad; }
 
-        .character-speaker.lori {
-            color: #e84393;
-        }
+        .lori .character-avatar { border-color: #e84393; }
+        .lori .character-name { color: #e84393; }
 
-        .character-speaker.boss {
-            color: #2c3e50;
-        }
+        .boss .character-avatar { border-color: #2c3e50; }
+        .boss .character-name { color: #2c3e50; }
 
-        .character-speaker.fitness {
-            color: #d35400;
-        }
+        .fitness .character-avatar { border-color: #d35400; }
+        .fitness .character-name { color: #d35400; }
 
-        .character-speaker.psych {
-            color: #16a085;
-        }
+        .psych .character-avatar { border-color: #16a085; }
+        .psych .character-name { color: #16a085; }
 
-        .character-speaker.wife {
-            color: #c0392b;
-        }
+        .wife .character-avatar { border-color: #c0392b; }
+        .wife .character-name { color: #c0392b; }
+
+        .sugar .character-avatar { border-color: #f1c40f; }
+        .sugar .character-name { color: #e67e22; }
+
+        .hubby .character-avatar { border-color: #2980b9; }
+        .hubby .character-name { color: #2980b9; }
+
+        .colonel .character-avatar { border-color: #27ae60; }
+        .colonel .character-name { color: #27ae60; }
+
+        .karma .character-avatar { border-color: #f39c12; }
+        .karma .character-name { color: #d35400; }
+
+        .awer .character-avatar { border-color: #34495e; }
+        .awer .character-name { color: #34495e; }
 
         .faq-answer {
             color: #444;
-            line-height: 1.5;
+            line-height: 1.6;
         }
 
         .contact-box {
@@ -130,71 +164,155 @@
 
         <div class="faq-item">
             <div class="faq-question">How do I actually use this app? What's the point?</div>
+            <div class="character-header ego">
+                <img src="images/character_ego.png" alt="The Ego" class="character-avatar">
+                <span class="character-name">The Ego</span>
+            </div>
             <div class="faq-answer">
-                <span class="character-speaker ego">[The Ego 🌌]:</span> Look, it's simple. You create tasks you need to
-                do. Then, you pick one of us to hold you accountable. When you finish a task, tap the "Mood" button for
-                a nice, validating pat on the back. If you're procrastinating and being lazy, tap "Slap" for a brutal
-                reality check. We track your streaks. Don't disappoint us.
+                Look, it's simple. You create tasks you need to do. Then, you pick one of us to hold you accountable. When you finish a task, tap the "Mood" button for a nice, validating pat on the back. If you're procrastinating and being lazy, tap "Slap" for a brutal reality check. We track your streaks. Don't disappoint us.
             </div>
         </div>
 
         <div class="faq-item">
             <div class="faq-question">Why are there different characters? Who do I pick?</div>
+            <div class="character-header lori">
+                <img src="images/char_lori_cute.png" alt="Lori Cute" class="character-avatar">
+                <span class="character-name">Lori Cute</span>
+            </div>
             <div class="faq-answer">
-                <span class="character-speaker lori">[Lori Cute 💅]:</span> Because one vibe doesn't fit all, bestie!
-                Need someone to hype you up like a loyal best friend? That's me. Need military discipline? Pick the
-                Colonel. Need to feel corporate pressure? Pick The Boss. You can switch us out anytime on the main
-                screen based on exactly what kind of emotional damage you need today.
+                Because one vibe doesn't fit all, bestie! Need someone to hype you up like a loyal best friend? That's me. Need military discipline? Pick the Colonel. Need to feel corporate pressure? Pick The Boss. You can switch us out anytime on the main screen based on exactly what kind of emotional damage you need today.
             </div>
         </div>
 
         <div class="faq-item">
             <div class="faq-question">How does the Task Tracker work? Will it yell at me?</div>
+            <div class="character-header fitness">
+                <img src="images/char_fitness.png" alt="Fitness Coach" class="character-avatar">
+                <span class="character-name">Fitness Coach</span>
+            </div>
             <div class="faq-answer">
-                <span class="character-speaker fitness">[Fitness Coach 🏋️‍♂️]:</span> You bet it will! You add tasks.
-                You set deadlines. If you enable push notifications, we WILL remind you to get off the couch. No
-                excuses. Mark them complete to build a streak, or ignore them and watch your dossier fill up with
-                failures. We track your completion rate, so don't even try to hide.
+                You bet it will! You add tasks. You set deadlines. If you enable push notifications, we WILL remind you to get off the couch. No excuses. Mark them complete to build a streak, or ignore them and watch your dossier fill up with failures. We track your completion rate, so don't even try to hide.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">How do I add tasks and connect my calendar?</div>
+            <div class="character-header hubby">
+                <img src="images/char_future_hubby.png" alt="Future Hubby" class="character-avatar">
+                <span class="character-name">Future Hubby</span>
+            </div>
+            <div class="faq-answer">
+                Darling, we want our future to be strictly organized, don't we? You can easily write tasks right in the Task Tracker. Even better, you can connect your Apple iCal directly so everything synced up perfectly. Just go to settings and toggle "Sync with Calendar". I'll be here waiting while you plan our day!
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Can I write down my thoughts or notes?</div>
+            <div class="character-header psych">
+                <img src="images/char_psychologist.png" alt="Psychologist" class="character-avatar">
+                <span class="character-name">Psychologist</span>
+            </div>
+            <div class="faq-answer">
+                Journaling is excellent for cognitive processing. Yes, within any task, you can open and write detailed notes. Jot down sub-tasks, vent your frustrations, or keep track of your brilliant ideas. We log it all for your mental well-being and productivity analysis.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Can I check the weather in the app?</div>
+            <div class="character-header karma">
+                <img src="images/char_karma.png" alt="Karma" class="character-avatar">
+                <span class="character-name">Karma</span>
+            </div>
+            <div class="faq-answer">
+                Everything is connected, including the weather and your mood. On the main screen, simply tap the character once to see today's weather. Tap twice (tap-tap) to see tomorrow's forecast, and tap three times (tap-tap-tap) to see the week's outlook. The universe provides, and so does MoodSlap.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">I see a Shopping List feature. How does it work?</div>
+            <div class="character-header sugar">
+                <img src="images/char_sugar_boy.png" alt="Sugar Boy" class="character-avatar">
+                <span class="character-name">Sugar Boy</span>
+            </div>
+            <div class="faq-answer">
+                Oh babe, the shopping list is absolutely fabulous! You can type in as many products as your heart desires. And the best part? You can share the list with anyone. So when I need my matcha latte ingredients, I just send the list right over. Simple and stylish!
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Can I change the screen to dark mode?</div>
+            <div class="character-header boss">
+                <img src="images/char_boss.png" alt="The Boss" class="character-avatar">
+                <span class="character-name">The Boss</span>
+            </div>
+            <div class="faq-answer">
+                I prefer working in the dark, it increases my focus. Yes, you can switch the entire application between a clean White screen and a sleek Dark screen. Go to the Settings tab, find "Appearance", and change it. Time is money, stop staring at the bright screen if it hurts your eyes. Let's get back to work.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">What exactly do the "Mood" and "Slap" buttons do?</div>
+            <div class="character-header wife">
+                <img src="images/character_wife.png" alt="Crazy Wifey" class="character-avatar">
+                <span class="character-name">Crazy Wifey</span>
+            </div>
+            <div class="faq-answer">
+                Ugh, isn't it obvious?! If you did your task like a good little partner, you tap "Mood" for support, sweet praise, and motivation. If you PROCRASTINATED or failed, you tap "Slap" for some tough love and a reality check! Don't come crying to me if you press Slap when you didn't earn your praise!
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Are there Home Screen Widgets, and can I change their colors?</div>
+            <div class="character-header lori">
+                <img src="images/char_lori_cute.png" alt="Lori Cute" class="character-avatar">
+                <span class="character-name">Lori Cute</span>
+            </div>
+            <div class="faq-answer">
+                Omg, yesss bestie! We have a whole bunch of cute widgets to decorate your home screen! We have small ones, big ones, task lists, and character moods. And here's the best part: you can change all the aesthetic colors to match your vibe. Go customize them right now, it's so fetch!
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">I'm slacking off. Will this actually make me productive?</div>
+            <div class="character-header colonel">
+                <img src="images/char_colonel.png" alt="The Colonel" class="character-avatar">
+                <span class="character-name">The Colonel</span>
+            </div>
+            <div class="faq-answer">
+                Listen up, recruit! If you lack discipline, we will instill it. This isn't just a toy; it is a tactical operation for your life. You log your tasks, you execute them, and you report back. If you fail, the Dossier will record your incompetence. Dismissed!
             </div>
         </div>
 
         <div class="faq-item">
             <div class="faq-question">What is the "Dossier" and why is it analyzing me?</div>
+            <div class="character-header psych">
+                <img src="images/char_psychologist.png" alt="Psychologist" class="character-avatar">
+                <span class="character-name">Psychologist</span>
+            </div>
             <div class="faq-answer">
-                <span class="character-speaker psych">[Psychologist 🧐]:</span> The Dossier is a reflection of your
-                behavioral patterns. We track your task completion rates, which moods you lean towards, and generate a
-                Weekly Roast to summarize your progress—or lack thereof. It's not random. We are analyzing your
-                productivity habits. It's for your own good, really.
+                The Dossier is a reflection of your behavioral patterns. We track your task completion rates, which moods you lean towards, and generate a Weekly Roast to summarize your progress—or lack thereof. It's not random. We are analyzing your productivity habits. It's for your own good, really.
             </div>
         </div>
 
         <div class="faq-item">
             <div class="faq-question">I bought a new phone or reinstalled the app. Where are my characters?</div>
+            <div class="character-header awer">
+                <img src="images/char_awer_thiks.png" alt="Awer Thiks" class="character-avatar">
+                <span class="character-name">Awer Thiks</span>
+            </div>
             <div class="faq-answer">
-                <span class="character-speaker boss">[The Boss 👔]:</span> Panic is inefficient. Just go to the Settings
-                screen (the gear icon) and tap <strong>"Restore Purchases"</strong>. As long as you are logged in with
-                the same Apple ID you used for the original purchase, your subscriptions and premium characters will
-                reactivate immediately. Let's get back to work.
+                Hey there... don't worry about it. Just go to the Settings screen (the gear icon) and tap <strong>"Restore Purchases"</strong>. As long as you are logged in with the same Apple ID you used for the original purchase, your subscriptions and premium characters will reactivate immediately. Now let's just chill...
             </div>
         </div>
 
         <div class="faq-item">
             <div class="faq-question">How do I cancel my subscription?</div>
-            <div class="faq-answer">
-                <span class="character-speaker wife">[Crazy Wifey 💃]:</span> Oh, so you're just giving up on us?
-                Typical. Fine. All subscriptions are handled by Apple natively. Open the <strong>Settings app</strong>
-                on your iPhone, tap your name at the very top, tap <strong>"Subscriptions"</strong>, find MoodSlap, and
-                tap Cancel. I'm fine with it. I'm FINE.
+            <div class="character-header wife">
+                <img src="images/character_wife.png" alt="Crazy Wifey" class="character-avatar">
+                <span class="character-name">Crazy Wifey</span>
             </div>
-        </div>
-
-        <div class="faq-item">
-            <div class="faq-question">My home screen widget is stuck or isn't updating!</div>
             <div class="faq-answer">
-                <span class="character-speaker ego">[The Ego 🌌]:</span> It's not our fault, it's iOS trying to save
-                battery. To fix it, ensure "Background App Refresh" is turned ON for MoodSlap in your iPhone's Settings.
-                Also, if your phone is in "Low Power Mode", Apple stops updating widgets. Turn that off, open the app
-                once, and the widget will refresh.
+                Oh, so you're just giving up on us? Typical. Fine. All subscriptions are handled by Apple natively. Open the <strong>Settings app</strong> on your iPhone, tap your name at the very top, tap <strong>"Subscriptions"</strong>, find MoodSlap, and tap Cancel. I'm fine with it. I'm FINE.
             </div>
         </div>
 
