@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MoodSlap - Support</title>
+    <title>MoodSlap - Support & Guide</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -27,34 +27,78 @@
             color: #2c3e50;
             border-bottom: 2px solid #eee;
             padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+
+        .intro-text {
+            font-style: italic;
+            color: #7f8c8d;
             margin-bottom: 30px;
+            font-size: 1.1em;
         }
 
         h2 {
             color: #34495e;
-            margin-top: 30px;
+            margin-top: 40px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
         }
 
         .faq-item {
-            margin-bottom: 20px;
+            margin-bottom: 25px;
+            background: #fdfdfd;
+            border: 1px solid #eaeaea;
+            border-radius: 8px;
+            padding: 15px 20px;
         }
 
         .faq-question {
-            font-weight: bold;
+            font-weight: 700;
             color: #2c3e50;
-            margin-bottom: 5px;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .character-speaker {
+            font-weight: bold;
+            color: #e74c3c;
+            margin-right: 5px;
+        }
+
+        .character-speaker.ego {
+            color: #8e44ad;
+        }
+
+        .character-speaker.lori {
+            color: #e84393;
+        }
+
+        .character-speaker.boss {
+            color: #2c3e50;
+        }
+
+        .character-speaker.fitness {
+            color: #d35400;
+        }
+
+        .character-speaker.psych {
+            color: #16a085;
+        }
+
+        .character-speaker.wife {
+            color: #c0392b;
         }
 
         .faq-answer {
-            color: #555;
-            margin-bottom: 15px;
+            color: #444;
+            line-height: 1.5;
         }
 
         .contact-box {
             background-color: #e8f4fd;
             border-left: 4px solid #3498db;
             padding: 20px;
-            margin-top: 40px;
+            margin-top: 50px;
             border-radius: 4px;
         }
 
@@ -78,52 +122,93 @@
 
 <body>
     <div class="container">
-        <h1>MoodSlap Support</h1>
+        <h1>MoodSlap Support & Guide</h1>
+        <p class="intro-text">Welcome to the MoodSlap command center. If you're lost, confused, or just looking for an
+            excuse to procrastinate... you came to the right place. Our "support staff" will take it from here.</p>
 
-        <p>Welcome to MoodSlap Support. We're here to help you get the most out of your brutally honest productivity
-            companion.</p>
-
-        <h2>Frequently Asked Questions (FAQ)</h2>
+        <h2>App Guide & FAQ</h2>
 
         <div class="faq-item">
-            <div class="faq-question">How do I restore my purchases?</div>
-            <div class="faq-answer">If you've reinstalled the app or switched to a new device, you can restore your
-                premium subscriptions by going to the Settings screen (gear icon) and tapping "Restore Purchases".
-                Ensure you are logged in with the same Apple ID used for the original purchase.</div>
+            <div class="faq-question">How do I actually use this app? What's the point?</div>
+            <div class="faq-answer">
+                <span class="character-speaker ego">[The Ego 🌌]:</span> Look, it's simple. You create tasks you need to
+                do. Then, you pick one of us to hold you accountable. When you finish a task, tap the "Mood" button for
+                a nice, validating pat on the back. If you're procrastinating and being lazy, tap "Slap" for a brutal
+                reality check. We track your streaks. Don't disappoint us.
+            </div>
         </div>
 
         <div class="faq-item">
-            <div class="faq-question">How do I manage or cancel my subscription?</div>
-            <div class="faq-answer">All subscriptions are managed securely by Apple. To cancel or change your
-                subscription, open the Settings app on your iPhone, tap your name at the top, tap "Subscriptions", and
-                select MoodSlap to manage your plan.</div>
+            <div class="faq-question">Why are there different characters? Who do I pick?</div>
+            <div class="faq-answer">
+                <span class="character-speaker lori">[Lori Cute 💅]:</span> Because one vibe doesn't fit all, bestie!
+                Need someone to hype you up like a loyal best friend? That's me. Need military discipline? Pick the
+                Colonel. Need to feel corporate pressure? Pick The Boss. You can switch us out anytime on the main
+                screen based on exactly what kind of emotional damage you need today.
+            </div>
         </div>
 
         <div class="faq-item">
-            <div class="faq-question">Why isn't the Home Screen widget updating?</div>
-            <div class="faq-answer">Home Screen widgets are updated periodically by iOS. To ensure it updates
-                frequently, make sure "Background App Refresh" is enabled for MoodSlap in your iPhone's Settings. Also,
-                check that your device isn't in "Low Power Mode", which restricts background updates.</div>
+            <div class="faq-question">How does the Task Tracker work? Will it yell at me?</div>
+            <div class="faq-answer">
+                <span class="character-speaker fitness">[Fitness Coach 🏋️‍♂️]:</span> You bet it will! You add tasks.
+                You set deadlines. If you enable push notifications, we WILL remind you to get off the couch. No
+                excuses. Mark them complete to build a streak, or ignore them and watch your dossier fill up with
+                failures. We track your completion rate, so don't even try to hide.
+            </div>
         </div>
 
         <div class="faq-item">
-            <div class="faq-question">How does Family & Friends sharing work?</div>
-            <div class="faq-answer">You can share tasks and lists with others by linking accounts. Generate a sharing
-                code in the App Settings and securely send it to your friend/family member. Once they enter the code in
-                their app, your accounts will be linked for shared productivity... and roasted consequences.</div>
+            <div class="faq-question">What is the "Dossier" and why is it analyzing me?</div>
+            <div class="faq-answer">
+                <span class="character-speaker psych">[Psychologist 🧐]:</span> The Dossier is a reflection of your
+                behavioral patterns. We track your task completion rates, which moods you lean towards, and generate a
+                Weekly Roast to summarize your progress—or lack thereof. It's not random. We are analyzing your
+                productivity habits. It's for your own good, really.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">I bought a new phone or reinstalled the app. Where are my characters?</div>
+            <div class="faq-answer">
+                <span class="character-speaker boss">[The Boss 👔]:</span> Panic is inefficient. Just go to the Settings
+                screen (the gear icon) and tap <strong>"Restore Purchases"</strong>. As long as you are logged in with
+                the same Apple ID you used for the original purchase, your subscriptions and premium characters will
+                reactivate immediately. Let's get back to work.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">How do I cancel my subscription?</div>
+            <div class="faq-answer">
+                <span class="character-speaker wife">[Crazy Wifey 💃]:</span> Oh, so you're just giving up on us?
+                Typical. Fine. All subscriptions are handled by Apple natively. Open the <strong>Settings app</strong>
+                on your iPhone, tap your name at the very top, tap <strong>"Subscriptions"</strong>, find MoodSlap, and
+                tap Cancel. I'm fine with it. I'm FINE.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">My home screen widget is stuck or isn't updating!</div>
+            <div class="faq-answer">
+                <span class="character-speaker ego">[The Ego 🌌]:</span> It's not our fault, it's iOS trying to save
+                battery. To fix it, ensure "Background App Refresh" is turned ON for MoodSlap in your iPhone's Settings.
+                Also, if your phone is in "Low Power Mode", Apple stops updating widgets. Turn that off, open the app
+                once, and the widget will refresh.
+            </div>
         </div>
 
         <div class="contact-box">
-            <h2>Still need help? Contact Us</h2>
-            <p>If you have any other questions, encountered a bug, or need account assistance, please email our support
-                team:</p>
-            <p><strong>Email:</strong> <a href="mailto:arenarts.tech@gmail.com">arenarts.tech@gmail.com</a></p>
-            <p>When emailing about a bug, please include your device model, iOS version, and the email address
-                associated with your MoodSlap account (if applicable).</p>
+            <h2>Human Support (Boring, but necessary)</h2>
+            <p>If the AI characters haven't solved your problem, encountered a bug, or you have a billing issue, you can
+                reach out to our actual human developers:</p>
+            <p><strong>Email:</strong> <a href="mailto:info@moodslap.app">info@moodslap.app</a></p>
+            <p><strong>Important:</strong> When emailing about a bug, please include your device model, iOS version, and
+                the email address associated with your MoodSlap account (if applicable).</p>
         </div>
 
         <div class="footer">
-            <p>&copy; 2024 Arenarts. All rights reserved.</p>
+            <p>&copy; 2026 Arenarts. All rights reserved.</p>
             <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
         </div>
     </div>
