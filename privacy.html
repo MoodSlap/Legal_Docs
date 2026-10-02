@@ -45,7 +45,7 @@
 
 <body>
     <h1>Privacy Policy</h1>
-    <p class="update-date">Last updated: September 18, 2026</p>
+    <p class="update-date">Last updated: October 2, 2026</p>
 
     <p>This Privacy Policy describes how MoodSlap ("we", "us", or "our") collects, uses, and discloses your information
         when you use our mobile application (the "Service").</p>
@@ -72,6 +72,8 @@
         <li>Device type and operating system version.</li>
         <li>Feature usage statistics (e.g., how often a character is selected).</li>
         <li>Crash reports and performance data (collected via Firebase Crashlytics).</li>
+        <li>Technical diagnostics, such as a notice that the App's iCloud storage is full. These never include
+            the content of your tasks, notes, or other data.</li>
     </ul>
 
     <h3>1.3. Location Information</h3>
@@ -125,9 +127,9 @@
     <p>To ensure the accuracy of time-limited features (such as free trials and gifts), MoodSlap may
         collect and process the following data locally on your device:</p>
     <ul>
-        <li><strong>System Uptime:</strong> The App reads your device's system uptime to verify the accuracy
-            of on-device timers. This data is used solely for timer calculations and is never transmitted
-            to external servers.</li>
+        <li><strong>Device Clock Check:</strong> The App compares your device's clock with the time elapsed since
+            the device was last started to verify the accuracy of on-device timers. This data is used solely for
+            timer calculations and is never transmitted to external servers.</li>
         <li><strong>Keychain Storage:</strong> Trial expiration dates are stored in the device Keychain
             to persist across app reinstalls, ensuring each trial can only be used once per character.
             This data is stored locally and is not accessible to us.</li>
@@ -140,13 +142,24 @@
         <li><strong>Cloud Storage:</strong> The following is stored on our cloud servers (powered by Google
             Firebase/Firestore): your MoodSlap ID, your User Name, an app-generated device identifier, a push
             notification token, account creation and last-seen dates, and referral data (see section 1.10).</li>
-        <li><strong>Tasks Stay Private:</strong> Your tasks, notes, calendar events, and birthdays are
-            <strong>not</strong> uploaded to our servers. They are stored on your device and synchronized only via
-            your personal Apple iCloud account.</li>
+        <li><strong>Your Content Stays Private:</strong> Your tasks, notes, shopping lists, calendar events, and
+            birthdays are <strong>not</strong> uploaded to our servers.
+            <ul>
+                <li>Notes and shopping lists are stored on your device only.</li>
+                <li>Tasks, birthdays, and App settings are also synchronized via your personal Apple iCloud account
+                    (iCloud key-value storage), so they are available on your other devices.</li>
+                <li>Older completed or past tasks may be kept in an archive file in the App's private folder in your
+                    iCloud Drive (or on your device if iCloud Drive is turned off), so you can still look them up in
+                    the App later.</li>
+            </ul>
+            Data in your iCloud account is stored and protected by Apple under your Apple ID; we cannot access it.</li>
         <li><strong>Anonymous Sign-In:</strong> Your account is created with anonymous Firebase Authentication.
             We do not require your real name, email, or phone number to generate a MoodSlap ID.</li>
         <li><strong>Optional Email:</strong> If the App offers linking an email address to your account, doing so is
             entirely optional and used solely for account recovery or gifting purposes.</li>
+        <li><strong>Sign in with Apple:</strong> If the App offers the optional Sign in with Apple, the name and email
+            address Apple shares with the App are stored only in your device's Keychain to show your account in
+            Settings. They are not uploaded to our servers.</li>
         <li><strong>Push Notifications:</strong> A push token from Firebase Cloud Messaging is stored with your
             account so we can deliver notifications you have enabled.</li>
     </ul>
@@ -215,7 +228,7 @@
     <ul>
         <li><a href="https://firebase.google.com/support/privacy" target="_blank">Google Firebase</a> (Analytics,
             Crashlytics, Authentication, Firestore, Cloud Messaging, Remote Config, Storage for downloadable
-            content such as voice packs)</li>
+            content such as voice packs and phrase updates)</li>
         <li><a href="https://www.apple.com/legal/privacy/en-ww/" target="_blank">Apple Services</a></li>
         <li><a href="https://weatherkit.apple.com/legal-attribution.html" target="_blank">Apple WeatherKit</a></li>
         <li><a href="https://policies.google.com/technologies/ads" target="_blank">Google AdMob</a></li>
@@ -257,8 +270,15 @@
         <li><strong>What Happens:</strong> Upon request, your MoodSlap ID, shared tasks, lists, and any linked
             information (such as an optional email) will be permanently deleted from our active servers within 30 days.
         </li>
-        <li><strong>Local Data:</strong> Deleting your cloud account does not automatically delete data stored locally
-            on your device (e.g., in Apple iCloud). You must uninstall the app to remove local data.</li>
+        <li><strong>Data on Your Device and in iCloud:</strong> Deleting your MoodSlap ID does not delete the data
+            stored on your device or in your personal iCloud account, because we have no access to it.
+            <ul>
+                <li>To remove data from your device, uninstall the App.</li>
+                <li>Uninstalling does not remove the App's data from iCloud (tasks, birthdays, settings, and the task
+                    archive). To delete it, open iOS Settings → [your name] → iCloud → Manage Account Storage
+                    (or Manage Storage) → MoodSlap.</li>
+            </ul>
+        </li>
     </ul>
 
     <h2>8. Additional Information for Users in the EEA and UK</h2>
